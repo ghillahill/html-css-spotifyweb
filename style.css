@@ -31,12 +31,19 @@ a:hover {
 
 .container {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
+
+/*_____Inizio Sidebar_____*/
+
 
 .sidebar {
     width: 250px;
     float: left;
     display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
     background: rgb(16,14,1);
     background: linear-gradient(0deg, rgba(16,14,1,1) 25%, rgba(31,27,0,1) 100%);
 }
@@ -47,12 +54,65 @@ a:hover {
     display: table;
 }
 
+.logo-brand {
+    padding: 5px;
+    width: 250px;
+}
+
+.logo-brand img{
+    width: 140px;
+}
+
+.sidebar-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 40px 0;
+}
+
+.current-page {
+    background-color: #555555;
+}
+
+.sidebar-list i {
+    vertical-align: middle;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+.sidebar-list li {
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.sidebar-list a {
+    text-decoration: none;
+    color: #bbbbbb;
+}
+
+.sidebar-list .current-page a {
+    color: white;
+}
+
+.sidebar-list a:hover {
+    color: white;
+}
+
+.fa-spotify {
+    display: none;
+}
+
+/*_____Fine Sidebar_____*/
+
+
+
+/*_____Inizio Main-Section_____*/
+
 .main-section {
     float: right;
     display: flex;
     flex-direction: column;
     padding: 25px 150px 25px 150px;
-    width: calc(100vw - 250px);
     height: calc(100vh - 90px);
     overflow: auto;
     background: rgb(138,129,1);
@@ -94,6 +154,7 @@ a:hover {
 .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 50px 0;
 }
 
@@ -128,7 +189,51 @@ a:hover {
     border-radius: 50%;
 }
 
+/*_____Fine Main-Section_____*/
+
+
+
+/*_____Inizio Footer_____*/
+
 .music-player-bar {
     height: 90px;
     background-color: #282828;
+}
+
+/*_____Fine Footer_____*/
+
+
+
+/*_____Inizio Media Queries_____*/
+
+@media screen and (max-width: 420px) {
+    .sidebar {
+        width: 80px;
+    }
+
+    .sidebar-list {
+        align-items: center;
+    }
+
+    .sidebar-list i {
+        padding-right: 0;
+    }
+
+    .fa-spotify {
+        margin: auto;
+        display: inline-block;
+        font-size: 30px;
+    }
+
+    .sidebar span {
+        display: none;
+    }
+
+    .sidebar .laptop-tablet-img {
+        display: none;
+    }
+
+    .main-section {
+        padding: 15px 30px 15px 30px;
+    }
 }
