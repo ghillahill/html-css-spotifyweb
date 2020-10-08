@@ -17,7 +17,7 @@ h1 {
 h3 {
     text-transform: uppercase;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
 }
 
@@ -450,7 +450,7 @@ a:hover {
 
 /*_____Inizio Media Queries_____*/
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 512px) {
 
     .sidebar {
         padding: 25px 10px;
@@ -538,7 +538,7 @@ a:hover {
     }
 
     .progress-bar-bg {
-        width: 80%
+        width: 80%;
     }
 
     .progress-bar-info span {
@@ -546,4 +546,53 @@ a:hover {
     }
 
     /*         */
+}
+
+@media screen and (max-width: 1009px) {
+
+    .main-section {
+        align-items: left;
+        padding: 15px 30px 15px 30px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .content {
+        padding: 10px 30px 10px 0;
+    }
+
+    .content img{
+        width: 100px;
+        height: 100px;
+        align-items: center;
+        box-shadow: 8px 14px 12px -5px rgba(0,0,0,0.58);
+    }
+
+    .song-info {
+        display: none;
+    }
+
+    .song-utility {
+        display: none;
+    }
+
+    .progress-bar-info span {
+        display: none;
+    }
+
 }
