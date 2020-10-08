@@ -450,6 +450,25 @@ a:hover {
 
 /*_____Inizio Media Queries_____*/
 
+@media screen and (max-width: 406px) {
+
+    .song-box img {
+        padding-right: 0;
+    }
+
+    .fa-heart {
+        display: none;
+    }
+
+    .fa-random {
+        display: none;
+    }
+
+    .fa-redo-alt {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 512px) {
 
     .sidebar {
@@ -538,7 +557,7 @@ a:hover {
     }
 
     .progress-bar-bg {
-        width: 80%;
+        width: 100%;
     }
 
     .progress-bar-info span {
